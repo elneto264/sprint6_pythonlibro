@@ -8,20 +8,25 @@ class Libro:
 	def agregar(self,titulo,autor):
 
 		n=int(input("Cuantos Libros Deseas Agregar"))#se pregunta cuantos elementos agregar
+		matriz=[]
 		for i in range(n):# el ciclo for ejecuta el rango de veces de n, permite agregar mas de un libro
 		#Con el siguiente bloque de codigo escribimos usando las variables anteriores al txt
-			self.titulo=input("Introduce el título: ")
+			self.titulo= input("Introduce el título: ")
 			self.autor=input("Introduce el autor: ")
 			f = open("text.txt", "a")
-			f.write(l1.titulo+" - ")#esta línea escribe el título
-			f.write(l1.autor)#esta línea escribe el autor 
-			f.write("\n")#el \n crea un salto de línea para la siguiente entrada
-			f.close()
+			matriz.append([])
+			for j in range(f):
+				matriz[i].append()
+				f.write(self.titulo+" - ")#esta línea escribe el título
+				f.write(self.autor)#esta línea escribe el autor 
+				f.write("\n")#el \n crea un salto de línea para la siguiente entrada
+				#f.close()
 	def buscarTitulo(self,titulo,autor): #funccion para busqueda de Titulo, pasamos el parametro de la lista
-		print ("Busca Titulo")
+		print ("Buscar por Titulo")
 		#f = open("text.txt", "r")
     #recorre la lista
-		busqueda = input("Ingrese Titulo : ") #ingresamos el titulo a buscar agregar atributos(titulo y autor)
+		
+		busqueda = input("Ingrese Titulo - Autor: ") #ingresamos el titulo a buscar agregar atributos(titulo y autor)
 		with open("text.txt") as a:
 			if busqueda in a.read():
 				print(busqueda)
