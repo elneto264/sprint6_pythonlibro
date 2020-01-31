@@ -30,3 +30,6 @@ coca - ina
 momosan - santo
 coco - nut
 Inco - Inut
+1 - 1
+2 - 2
+2 - 2

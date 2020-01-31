@@ -2,7 +2,7 @@ class Libro:
     titulo = ''
     autor = ''
     def agregar(self, titulo, autor):
-        n = int(input("Cuantos Libros Deseas Agregar"))
+        n = int(input("Cuantos libros deseas agregar: "))
         for i in range(n):
             self.titulo = input("Introduce el título: ")
             self.autor = input("Introduce el autor: ")
