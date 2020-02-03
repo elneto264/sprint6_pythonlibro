@@ -42,9 +42,18 @@ class Menu:
                 print ("")
                 input("Has pulsado la opción 2...\npulsa una tecla para continuar")
                 l1.agregar(l1.titulo,l1.autor)
+                l1.imprimir()
                 la.clean()
 
             elif opcionMenu=="3":
+                f = open("text.txt", "r")
+                f.close()
+                break
+            elif opcionMenu=="4":
+                f = open("text.txt", "r")
+                l1.buscar()
+                f.close()
+            elif opcionMenu=="6":
                 f = open("text.txt", "r")
                 f.close()
                 break
