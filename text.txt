@@ -32,6 +32,5 @@ coco - nut
 Inco - Inut
 1 - 1
 2 - 2
-2 - 2
- El Lazarillo de Tormes - anónimo
-Harry Potter y la cámara secreta - J.K Rowling
+2 - 2 
+Por amor - Solano

@@ -31,7 +31,7 @@ class Menu:
             if opcionMenu=="1":
                 print ("")
                 la.clean()
-                f = open("text.txt", "r")
+                f = open("primero.txt", "r")
                 print(f.read())
                 print("****************************************")
                 input("Has pulsado la opción 1...\npulsa una tecla para continuar")
@@ -46,15 +46,15 @@ class Menu:
                 la.clean()
 
             elif opcionMenu=="3":
-                f = open("text.txt", "r")
+                f = open("primero.txt", "r")
                 f.close()
                 break
             elif opcionMenu=="4":
-                f = open("text.txt", "r")
+                f = open("primero.txt", "r")
                 l1.buscar()
                 f.close()
             elif opcionMenu=="6":
-                f = open("text.txt", "r")
+                f = open("primero.txt", "r")
                 f.close()
                 break
             else:

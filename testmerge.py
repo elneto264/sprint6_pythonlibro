@@ -2,15 +2,13 @@ class Libro:
     titulo = ''
     autor = ''
     def __init__(self):
-        self.libreria = []
+        self.libreria =''
     def agregar(self, titulo, autor):
         n = int(input("Cuantos libros deseas agregar: "))
         for i in range(n):
             self.titulo = input("Introduce el título: ")
             self.autor = input("Introduce el autor: ")
-            estanteria = [self.titulo,self.autor]
-            self.libreria.append(estanteria)
-            f = open("text.txt", "a")
+            f = open("primero.txt", "a")
             f.write(self.titulo + " - ")
             f.write(self.autor)
             f.write("\n")
@@ -21,6 +19,21 @@ class Libro:
                 print(self.libreria[k][j]," ",end="")
             print()
     def buscar(self):
-        se = open("text.txt", "r")
-        word =  input("¿Qué libro deseas? ")
-        print(se.index(word))
+        f = open ("primero.txt", "r")
+        word = input("Que Libro deseas? ")
+        s = " "
+        count = 1
+        existe = False
+        while (s):
+            s = f.readline()
+            L = s.split()
+            if word in L:
+                print("Se Encuentra en ", count, ":", s)
+                count += 1
+                existe = True  
+            """else:
+                print("No Existe")"""
+        if existe == False:
+            print ("No existe")
+        f.close()
+        
